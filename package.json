@@ -5,7 +5,7 @@
   "dependencies": {
     "ajv": "^6.0.0",
     "bootstrap": "^4.1.0",
-    "jquery": "^1.9.1",
+    "jquery": "^3.0.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "popper.js": "^1.14.0",
