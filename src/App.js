@@ -23,9 +23,11 @@ class App extends Component {
       name: txt
     })
   }
+
   render() {
     return (
       <div className="App">
+        <Header/>
         <Header/>
         <h1>{this.state.name}</h1>
         <input onChange={(event) => this.setState({name: event.target.value})} value={this.state.name}/>
