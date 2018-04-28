@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './header';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+function Janynne(props) {return(
+  <div><h1 onClick={props.click}>Janynne {props.like}</h1></div>
+)}
 
 class App extends Component {
   constructor(){
@@ -24,10 +30,12 @@ class App extends Component {
     })
   }
 
+
   render() {
     return (
       <div className="App">
         <Header/>
+        <Janynne like="ice cream" click={() => alert("Hello")}/>
         <h1>{this.state.name}</h1>
         <input onChange={(event) => this.setState({name: event.target.value})} value={this.state.name}/>
         <button onClick={(event) => this.handleClick(event,"elcir")} >Change to Elcir</button>
